@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tarjetes</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        img{
+            height: 300px;
+            width: 100%;
+        }
+        body{
+            height: 100%;
+            background: linear-gradient(0deg, mediumpurple, purple);   
+        }
+        .contenidor{
+            width: 100%;
+            display: flex;
+            padding: 2em;
+            justify-content: center;
+            flex-direction: row;
+        }
+        .dissenyador{
+            width: 300px;
+            margin: 1em;
+            border-radius: 20px 20px 20px 20px;
+            display: flex;
+            flex-direction: column;
+            background: rgba(245, 245,245, 0.8);
+        }
+        .cont_img{
+            height: 300px;
+            background: purple;
+            border-radius: 20px 20px 0 0;
+        }
+        .cont_img_img{
+            filter: grayscale(100%);
+            mix-blend-mode: lighten;
+            border-radius: 20px 20px 0 0;
+            overflow: hidden;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+        header{
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            color: purple;
+            margin: 0.5em 1em;
+            padding: 0 0 0.2 0;
+            border-bottom: 2px solid purple;
+        }
+        h3{
+            font-weight: 600;
+            font-style: normal;
+        }
+        h4{
+            font-weight: 500;
+            font-style: italic;
+        }
+        .cont_txt{
+            margin: 1em 1em 1em 1em;
+            color: purple;
+            text-align: justify;
+            hyphens: auto;
+            font-size: 0.9em;
+            line-height: 1.4em;
+            flex-grow: 1;
+        }
+        .peu_dissenyador{
+            background: purple;
+            color: white;
+            font-style: italic;
+            font-size: 0.9em;
+            padding: 1em 1em 1em 1em;
+            border-radius: 0 0 20px 20px;
+        }
+        @media (max-width:600px){
+            body{
+                font-size: 2px;
+            }
+            .contenidor{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contenidor">
+        <div class="dissenyador">
+            <div class="cont_img">
+                <img src="img/paula_scher.jpg" alt="Paula Scher">
+            </div>
+            <header>
+            <h3>Paula Scher</h3>
+            <h4>1970</h4>
+            </header>
+            <div class="cont_txt">
+                <p>
+                    Paula Scher es una de las diseñadoras gráficas más influyentes del mundo. Descrita como la "maestra conjura de lo instantáneamente familiar", Scher se extiende a horcajadas en la línea entre la cultura pop y las bellas artes en su trabajo. Icónicas, inteligentes y accesibles, sus imágenes han entrado en la lengua vernácula estadounidense.
+                    Scher ha sido socia en la oficina de Nueva York de Pentagram desde 1991. Comenzó su carrera como directora de arte en la década de 1970 y principios de los 80, cuando su enfoque ecléctico de la tipografía se hizo muy influyente. A mediados de la década de 1990, su identidad histórica para The Public Theatre se fusionó en una simbología completamente nueva para las instituciones culturales, y sus recientes colaboraciones arquitectónicas han reimaginado el paisaje urbano como un entorno dinámico de diseño gráfico dimensional. Sus identidades gráficas para Citibank y Tiffany & Co. se han convertido en estudios de caso para la regeneración contemporánea de las marcas estadounidenses.
+                </p>
+            </div>
+            <div class="peu_dissenyador">
+                <p>
+                    Su obra ha sido expuesta en todo el mundo y está representada en las colecciones permanentes del Museo de Arte Moderno y el Museo Nacional de Diseño Cooper-Hewitt en Nueva York.
+                </p>
+            </div>
+        </div>
+        <div class="dissenyador">
+            <div class="cont_img">
+                <img src="img/yusaku%20kamekura2.jpg" alt="Yusaku Kamekura">
+            </div>
+            <header>
+                <h3>Yusaku Kamekura</h3>
+                <h4>1915-1991</h4>
+            </header>
+            <div class="cont_txt">
+                <p>
+                    Kamekura Yusaku estudió 1935-1938 arquitectura y los principios del constructivismo en el Instituto de Arquitectura Contemporánea y Artes Industriales  fundada en Tokio, un instituto privado de Kawakita Renshichirō con el objetivo de Introducción de las teorías de diseño de la Bauhaus en Japón. Kamekura trabajó desde 1938 para KK Nihon Kōbō en Tokio.
+
+                    Kamekura fue director de arte de una serie de publicaciones periódicas japonesas de 1938, incluyendo "Nippon", y también la Cámara de Comercio de Japón. En 1951, participó en la fundación del Japan Advertising Arts Club , que se comprometió con el reconocimiento social de la profesión de diseñador gráfico. En 1955 participó en la exposición "Graphic 55", junto con Hara Hiromu , Paul Rand y otros.
+
+                    En 1956, Kamekura recibió un premio del Japan Advertising Arts Club por un póster que pedía el uso pacífico de la energía nuclear . Cofundó el Centro de Diseño Nippon en Tokio en 1960 con Ikko Tanaka .
+
+                    Fuera de Japón, sus diseños más conocidos son los carteles de los Juegos Olímpicos de 1964 en Tokio y para la Expo '70 de Osaka . Las exposiciones de sus obras tuvieron lugar en el Museo de Arte Moderno de Nueva York (1953) y Chicago (1956). En 1964, sus obras se exhibieron en la documenta III en Kassel en el Departamento de Gráficos .
+                </p>
+            </div>
+            <div class="peu_dissenyador">
+                <p>
+                    Fue uno de los pioneros del diseño gráfico japonés que ha sido fundamental para establecer el diseño gráfico como un factor esencial en la sociedad, el arte y la cultura modernos. Ha contribuido internacionalmente con su trabajo sobre la reputación del diseño gráfico japonés moderno.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
